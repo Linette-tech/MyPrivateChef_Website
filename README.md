@@ -71,9 +71,11 @@ The website currently includes:
 - Git repository created.
 - Project changes committed and pushed to GitHub.
 
-### Future Development
+### Part 2
 
-Part 2 will focus on CSS styling, responsive design and improving the visual appearance of the website.
+An external stylesheet in `css/style.css` gives all five pages a warm, welcoming design. Cream and dark brown form the base; smoky salmon, jade green and sunset coral are used as accents. Simple media queries adjust spacing, text and meal cards for tablets and phones.
+
+### Future Development
 
 Part 3 will focus on JavaScript functionality, interactive features and search engine optimisation.
 
@@ -89,7 +91,40 @@ Home
 
 All pages are linked through the main navigation menu.
 
+## File Structure
+
+- Five HTML files in the main project folder
+- `css/style.css` for the design and responsive layout
+- `images/` for meal photos and branding
+- `Screenshots/` for desktop, tablet and phone evidence
+- `README.md` for project information
+
+## Website Screenshots
+
+The screenshots below show the finished layout at different screen sizes.
+
+### Desktop — Home page
+
+![Desktop view of the home page](Screenshots/Desktop%20homepage.png)
+
+### Tablet — Meals page (768 px)
+
+![Tablet view of the meals page](Screenshots/Tablet%20meal%20page.png)
+
+### Phone — Enquiry page (375 px)
+
+![Phone view of the enquiry form](Screenshots/Phone%20enquiry%20page.png)
+
 ## Changelog
+
+### Part 2 — 24 September 2026
+
+- Created an external stylesheet and linked it to all five pages.
+- Added warm colours, navigation and button styling, meal cards, and mobile and tablet layout rules.
+- Tested all five pages at phone and tablet widths and checked the desktop view.
+- Added desktop, tablet and phone screenshots to the README.
+- Updated the README with Part 2 design and file structure information.
+
 
 ### Part 1
 
