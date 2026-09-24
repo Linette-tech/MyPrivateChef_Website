@@ -124,6 +124,15 @@ The screenshots below show the finished layout at different screen sizes.
 - Tested all five pages at phone and tablet widths and checked the desktop view.
 - Added desktop, tablet and phone screenshots to the README.
 - Updated the README with Part 2 design and file structure information.
+- Added the Part 1 feedback corrections and full image credits to the README.
+
+### Part 1 feedback addressed in Part 2
+
+- **File organisation:** Kept the five HTML pages together and placed the shared stylesheet, food photos and screenshots in clearly named folders.
+- **Code comments:** Added short section comments to the CSS so the layout and responsive rules are easier to find.
+- **GitHub history:** Continued the original Part 1 repository and committed the Part 2 changes with a descriptive message. The earlier Part 1 commits remain in its history.
+- **README and changelog:** Updated the project description, file structure, screenshots and this record of changes.
+- **Content and research:** Kept the business details and meal information from Part 1 and added the original image sources below.
 
 
 ### Part 1
@@ -141,8 +150,23 @@ The screenshots below show the finished layout at different screen sizes.
 
 ## References
 
-External images used in the website were sourced from Pexels and are recorded in the project content research documentation.
+The following food photographs are from Pexels. Image details and access dates were recorded in the Part 1 content research document. All links were accessed on 25 August 2026.
 
-The My Private Chef logo was generated using ChatGPT by OpenAI and will be disclosed according to the IIE requirements for AI usage.
+| Website image | Photographer | Original image page |
+| --- | --- | --- |
+| `homepage_hero.jpg` | Alberta Studios | [Table full of food](https://www.pexels.com/photo/table-full-of-food-10480253/) |
+| `breakfast_taco.jpg` | ROMAN ODINTSOV | [Breakfast tacos with eggs](https://www.pexels.com/photo/breakfast-tacos-with-eggs-5840312/) |
+| `yoghurt_fruit_bowl.jpg` | Valeriya Kobzar | [Fruit and yoghurt bowl](https://www.pexels.com/photo/a-bowl-with-fruits-and-yogurt-8257438/) |
+| `french_toast.jpg` | Ana Palade | [French toast with fruit](https://www.pexels.com/photo/french-toasts-with-slices-of-fruits-15881785/) |
+| `classic_breakfast.jpg` | Valeria Boltneva | [Full English breakfast](https://www.pexels.com/photo/full-english-breakfast-served-on-plate-18580153/) |
+| `chicken_shawarma.jpg` | RDNE Stock project | [Shawarma](https://www.pexels.com/photo/a-person-holding-a-shawarma-5779423/) |
+| `chicken_avocado_salad.jpg` | Nadin Sh | [Vegetable meal](https://www.pexels.com/photo/close-up-of-vegetables-meal-18437695/) |
+| `creamy_chicken_pasta.jpg` | SONNIE WING | [Creamy chicken pasta](https://www.pexels.com/photo/delicious-creamy-chicken-pasta-dish-33515064/) |
+| `chicken_rice_bowl.jpg` | Nadin Sh | [Chicken rice bowl](https://www.pexels.com/photo/chicken-with-rice-with-sesame-seeds-and-vegetables-24738519/) |
+| `beef_stir_fry.jpg` | Kleine Beyers | [Vegetable dish](https://www.pexels.com/photo/vegetable-dish-2181151/) |
+| `grilled_chicken_vegetables.jpg` | Joerg Mangelsen | [Grilled chicken and vegetables](https://www.pexels.com/photo/grilled-chicken-with-vegetables-and-sauce-36936953/) |
+| `beef_lasagne.jpg` | alleksana | [Cheesy lasagne](https://www.pexels.com/photo/close-up-photo-of-cheesy-lasagna-5949900/) |
+| `vegetable_pasta.jpg` | Shameel mukkath | [Penne pasta](https://www.pexels.com/photo/penne-pasta-with-tomato-sauce-11161425/) |
+| `special_occasion_meal.jpg` | The Castlebar | [Food on table](https://www.pexels.com/photo/food-on-table-19107134/) |
 
-Full references and AI usage evidence are included in the supporting project documentation.
+**Logo and AI disclosure:** The `myprivatechef_logo.png` logo was generated with ChatGPT (OpenAI) on 25 August 2026 for this fictional business. Evidence of the logo generation is saved in the Part 1 research folder for the assignment's AI disclosure.
