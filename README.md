@@ -126,6 +126,8 @@ The screenshots below show the finished layout at different screen sizes.
 - Updated the README with Part 2 design and file structure information.
 - Added the Part 1 feedback corrections and full image credits to the README.
 
+- Added smaller image versions and `srcset`/`sizes` so browsers can choose suitable images for phone, tablet and desktop screens.
+
 ### Part 1 feedback addressed in Part 2
 
 - **File organisation:** Kept the five HTML pages together and placed the shared stylesheet, food photos and screenshots in clearly named folders.
