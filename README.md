@@ -75,9 +75,9 @@ The website currently includes:
 
 An external stylesheet in `css/style.css` gives all five pages a warm, welcoming design. Cream and dark brown form the base; smoky salmon, jade green and sunset coral are used as accents. Simple media queries adjust spacing, text and meal cards for tablets and phones.
 
-### Future Development
+### Part 3
 
-Part 3 will focus on JavaScript functionality, interactive features and search engine optimisation.
+JavaScript features and SEO are implemented below. Final email configuration, feedback and public deployment remain to be completed.
 
 ## Sitemap
 
@@ -172,3 +172,62 @@ The following food photographs are from Pexels. Image details and access dates w
 | `special_occasion_meal.jpg` | The Castlebar | [Food on table](https://www.pexels.com/photo/food-on-table-19107134/) |
 
 **Logo and AI disclosure:** The `myprivatechef_logo.png` logo was generated with ChatGPT (OpenAI) on 25 August 2026 for this fictional business. Evidence of the logo generation is saved in the Part 1 research folder for the assignment's AI disclosure.
+
+## Part 3 — Final POE implementation (2 November 2026)
+
+The Part 2 design, five pages, student information and original image credits are retained. New files: `js/main.js`, `js/config.js`, `SUBMISSION_GUIDE.md` and `TESTING.md`.
+
+### Features and rubric evidence
+
+| Requirement | Implementation / evidence |
+| --- | --- |
+| Interactive elements | Home page FAQ accordions use accessible native `details` and `summary`. |
+| Dynamic content and search | Meals page searches card names and descriptions and combines this with Breakfast/Lunch/Dinner filtering, including an empty-results message. |
+| Gallery lightbox | Click or keyboard-activate a meal photograph; Previous/Next and arrow keys navigate; Close and Escape dismiss the native modal dialog. |
+| Map | Contact page uses Leaflet 1.9.4 and OpenStreetMap tiles. Pan, zoom, select areas and open marker popups. Approximate area centres are labelled honestly. |
+| Motion | Short page-entry animation and button/link transitions; reduced-motion preference is respected. |
+| SEO | Each page has its own title and description, relevant meta keywords, descriptive existing image filenames and alt text. Responsive image variants are retained. |
+| Enquiry controls and validation | Name, email, South African phone, enquiry type, meal selection, portions, delivery date/time/area and optional notes. Inline accessible errors; first invalid control receives focus. |
+| Enquiry response | Listed meal price multiplied by 1–100 portions for everyday/monthly planning; other services receive a tailored-quote response. Dates must be tomorrow or later in Johannesburg. Time is checked against weekday/weekend hours. |
+| Contact controls and validation | Separate general-message form with contact information, message type and 10–2000 character message. |
+| Contact processing | Valid data is compiled into an encoded mailto draft, with a readable preview. Opening a draft does not prove an email was sent. |
+| AJAX | Optional `fetch` POST using FormData, timeout, disabled submit button and failure recovery. Requires a verified endpoint in `js/config.js`; disabled by default. |
+| README/changelog/references | This section supplements the original Part 1/2 documentation and credits. |
+
+### Important configuration and submission status
+
+- This is a fictional student project. The email address and telephone number are illustrative.
+- **Actual email delivery and AJAX integration are not complete until you configure a real recipient/form endpoint and test received email.** Do not claim those marks as fully verified yet.
+- `window.CONTACT_ENDPOINT = null` keeps email-draft mode. To use AJAX, replace null with a verified public HTTPS form endpoint that accepts FormData and permits the deployment origin. Set the recipient in that service, update contact page text/action and the draft recipient in `js/main.js`, then run the tests in `TESTING.md`. Never include private API keys in the site.
+- Client-side validation improves usability; a real endpoint must also validate input on the server. No enquiry records are stored by this static site.
+- Prices exclude delivery. Monthly planning estimates the selected number of portions, not an entire calendar month. Availability is not connected to a bookings database. Holiday hours require manual confirmation.
+- Map libraries and tiles need internet access; text service areas and an OpenStreetMap link remain available if loading fails.
+- The supplied LMS screenshot shows Part 2: 86/100 (86%) and overall feedback: “You have demonstrated good understanding of web development.” The detailed attachment, `WEDE Part2 Rubric T Malatji.docx`, has not yet been supplied. Specific lost-mark corrections must wait for that rubric. The screenshot also shows an earlier comment that the GitHub repository is private; confirm lecturer access before submission.
+- The GitHub repository has not been changed from this environment. Follow `SUBMISSION_GUIDE.md` to commit these files to the existing repository and enable public GitHub Pages.
+- A private preview is separate from the public, lecturer-accessible deployment requirement.
+
+### Changelog — Part 3, 2 November 2026
+
+1. Added unique page descriptions and relevant keyword metadata to all five pages; retained original descriptive image paths and credits.
+2. Added skip navigation, current-page indicators, keyboard focus styles and lazy loading for main-content images.
+3. Added FAQ accordions to the home page and reduced-motion-aware CSS animation/transitions.
+4. Added combined live search/category filtering and a responsive, keyboard-operable meal photo lightbox.
+5. Added a Leaflet map with five area markers, focus selector, attribution and loading-failure guidance.
+6. Upgraded the enquiry form with menu-based prices, quantities, future dates, operating-hour checks and a clear local estimate response.
+7. Added the missing separate contact form, input validation, encoded email-draft preview and optional configured AJAX submission.
+8. Added inline validation messages, reset handling and stale-result clearing after edits.
+9. Added submission and test guides. GitHub pushing, public deployment, detailed lecturer rubric and live email receipt remain user setup tasks.
+
+### Additional technical references
+
+Mozilla (n.d.) *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed: 2 November 2026).
+
+Leaflet (n.d.) *Quick Start Guide*. Available at: https://leafletjs.com/examples/quick-start/ (Accessed: 2 November 2026). This project pins the stable 1.9.4 global API; the current guide also discusses newer module-based versions.
+
+Google (n.d.) *Control your snippets in search results*. Available at: https://developers.google.com/search/docs/appearance/snippet (Accessed: 2 November 2026).
+
+OpenStreetMap contributors (n.d.) *Copyright and License*. Available at: https://www.openstreetmap.org/copyright (map attribution; verify current licence terms before submission).
+
+OpenAI (2026) *ChatGPT*. Used on 2 November 2026 to assist with Part 3 code, comments, documentation and verification. The student should review the implementation, explain its operation and follow the institution's AI disclosure rules.
+
+The original image references above are retained from Part 2 and have not been independently reverified in this update. Meta keywords are included to satisfy the supplied rubric; they should not be presented as a guarantee of search ranking.

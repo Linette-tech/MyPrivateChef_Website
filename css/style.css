@@ -181,3 +181,28 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* Part 3: focus, validation, interactive gallery, map and motion. */
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #236b56; outline-offset: 4px; }
+nav a[aria-current="page"] { background: #236b56; color: white; }
+.skip-link { position: absolute; left: 8px; top: -100px; padding: 12px; background: white; z-index: 2000; }
+.skip-link:focus { top: 8px; }
+.field-error { display: block; color: #9f2020; font-size: .95rem; }
+[aria-invalid="true"] { border: 2px solid #9f2020; }
+[role="status"]:not(:empty) { margin-top: 16px; padding: 16px; border-left: 4px solid #236b56; background: #f0f6f2; }
+details { padding: 16px 0; border-bottom: 1px solid #e9b6aa; }
+summary { cursor: pointer; font-weight: bold; }
+button, a { transition: background-color .2s, transform .2s; }
+.photo-button { display: block; width: 100%; padding: 0; background: transparent; border: 0; cursor: zoom-in; }
+.photo-button img { display: block; }
+dialog { width: min(850px,94vw); max-height: 92vh; border: 0; border-radius: 12px; padding: 20px; }
+dialog::backdrop { background: #211a16d9; }
+dialog img { display: block; max-height: 60vh; width: auto; margin: auto; object-fit: contain; }
+dialog figure { margin: 16px 0; }
+#delivery-map { height: 360px; margin-top: 16px; z-index: 0; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; }
+input,select,textarea { max-width: 100%; }
+main { animation: enter .35s ease-out; }
+@keyframes enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation: none !important; transition: none !important; } }

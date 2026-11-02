@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Private Chef | Enquiry</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta content="Calculate a meal estimate and enquire about everyday meals, monthly planning and special occasions in Johannesburg." name="description"/><meta content="My Private Chef, Johannesburg, meal delivery, enquiry, prepared meals" name="keywords"/><script defer="" src="js/main.js"></script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
+<!-- Website header and navigation -->
+<header>
+<img alt="My Private Chef logo" sizes="150px" src="images/Branding/myprivatechef_logo.png" srcset="images/Branding/myprivatechef_logo-150w.png 150w, images/Branding/myprivatechef_logo-300w.png 300w" width="180"/>
+<h1>My Private Chef</h1>
+<p>Fresh meals, planned around your life.</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="meals.html">Meals</a>
+<a aria-current="page" href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main id="main-content">
+<section>
+<h2>Make an Enquiry</h2>
+<p>
+                Use the form below to enquire about everyday meals,
+                monthly meal planning, special-occasion meals,
+                delivery or any of our other services.
+            </p>
+<p>
+                Submitting an enquiry does not automatically confirm
+                an order. My Private Chef will first review your enquiry.
+            </p>
+</section>
+<!-- Customer enquiry form -->
+<section>
+<h2>Enquiry Form</h2>
+<form action="enquiry.html" id="enquiry-form" method="post"><p>Calculate a local demonstration estimate. This form does not send your details or reserve delivery.</p>
+<p>
+<label for="fullname">Full Name:</label><br/>
+<input aria-describedby="fullname-error" autocomplete="name" id="fullname" maxlength="80" minlength="2" name="fullname" required="" type="text"/><span aria-live="polite" class="field-error" id="fullname-error"></span>
+</p>
+<p>
+<label for="email">Email Address:</label><br/>
+<input aria-describedby="email-error" autocomplete="email" id="email" maxlength="254" name="email" required="" type="email"/><span aria-live="polite" class="field-error" id="email-error"></span>
+</p>
+<p>
+<label for="phone">Contact Number:</label><br/>
+<input aria-describedby="phone-error" autocomplete="tel" id="phone" name="phone" pattern="(0[1-9][0-9]{8}|\+27[1-9][0-9]{8})" required="" title="Use 10 digits starting with 0, or +27 followed by 9 digits." type="tel"/><span aria-live="polite" class="field-error" id="phone-error"></span>
+</p>
+<p>
+<label for="enquiry-type">Type of Enquiry:</label><br/>
+<select aria-describedby="enquiry-type-error" id="enquiry-type" name="enquiry-type" required="">
+<option value="">Select an option</option>
+<option value="everyday">Everyday Meals</option>
+<option value="monthly">Monthly Meal Planning</option>
+<option value="special">Special-Occasion Meals</option>
+<option value="delivery">Delivery</option>
+<option value="other">Other</option>
+</select><span aria-live="polite" class="field-error" id="enquiry-type-error"></span>
+</p>
+<p>
+<label for="meal">Meal or Service of Interest:</label><br/>
+<select aria-describedby="meal-error" id="meal" name="meal"><option value="">Select a meal for a price estimate</option></select><span aria-live="polite" class="field-error" id="meal-error"></span>
+</p><p><label for="quantity">Portions (1–100)</label><input aria-describedby="quantity-error" id="quantity" max="100" min="1" name="quantity" required="" step="1" type="number" value="1"/><span aria-live="polite" class="field-error" id="quantity-error"></span></p>
+<p>
+<label for="delivery-date">
+                        Preferred Delivery Date:
+                    </label><br/>
+<input aria-describedby="delivery-date-error" id="delivery-date" name="delivery-date" required="" type="date"/><span aria-live="polite" class="field-error" id="delivery-date-error"></span>
+</p>
+<p>
+<label for="delivery-time">
+                        Preferred Delivery Time:
+                    </label><br/>
+<input aria-describedby="delivery-time-error" id="delivery-time" name="delivery-time" required="" type="time"/><span aria-live="polite" class="field-error" id="delivery-time-error"></span>
+</p>
+<p>
+<label for="delivery-area">Delivery Area:</label><br/>
+<select aria-describedby="delivery-area-error" id="delivery-area" name="delivery-area" required="">
+<option value="">Select an area</option>
+<option value="johannesburg">Johannesburg Central</option>
+<option value="braamfontein">Braamfontein</option>
+<option value="rosebank">Rosebank</option>
+<option value="sandton">Sandton</option>
+<option value="randburg">Randburg</option>
+</select><span aria-live="polite" class="field-error" id="delivery-area-error"></span>
+</p>
+<p>
+<label for="message">
+                        Additional Information or Special Requests:
+                    </label><br/>
+<textarea aria-describedby="message-error" cols="40" id="message" maxlength="2000" name="message" rows="6"></textarea><span aria-live="polite" class="field-error" id="message-error"></span>
+</p>
+<p>
+<button type="submit">Calculate enquiry response</button>
+<button type="reset">Clear Form</button>
+</p>
+<div id="enquiry-result" role="status" tabindex="-1"></div><noscript>Enable JavaScript to calculate an estimate.</noscript></form>
+</section>
+</main>
+<footer>
+<p>© 2026 My Private Chef. All rights reserved.</p>
+<p>Fictional student project. Enquiries are demonstrations, not confirmed orders.</p></footer>
+</body>
+</html>
