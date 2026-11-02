@@ -231,3 +231,11 @@ OpenStreetMap contributors (n.d.) *Copyright and License*. Available at: https:/
 OpenAI (2026) *ChatGPT*. Used on 2 November 2026 to assist with Part 3 code, comments, documentation and verification. The student should review the implementation, explain its operation and follow the institution's AI disclosure rules.
 
 The original image references above are retained from Part 2 and have not been independently reverified in this update. Meta keywords are included to satisfy the supplied rubric; they should not be presented as a guarantee of search ranking.
+## Final Deployment and Contact Form Update
+
+- Live website: https://linette-tech.github.io/MyPrivateChef_Website/
+- Repository: https://github.com/Linette-tech/MyPrivateChef_Website
+- Configured the contact form to submit asynchronously through Formspree.
+- Tested the live contact form and confirmed that the test email arrived.
+- This update supersedes earlier notes stating that email configuration
+  and public deployment were incomplete.
