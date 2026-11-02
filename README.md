@@ -239,3 +239,11 @@ The original image references above are retained from Part 2 and have not been i
 - Tested the live contact form and confirmed that the test email arrived.
 - This update supersedes earlier notes stating that email configuration
   and public deployment were incomplete.
+### Part 2 Feedback Review
+
+Part 2 received 86/100. The overall feedback stated:
+“You have demonstrated good understanding of web development.”
+
+The detailed graded rubric was unavailable during the Part 3 update.
+Part 3 changes were guided by the supplied assignment requirements
+and a review of the existing website.
